@@ -1,0 +1,47 @@
+1.Sta su baze podataka?
+Baze podataka predstavljaju sistem logicki zaokruzenih podataka kojima se opisuju neke osobe, predmeti, pojave ili procesi koji su medjusobno povezani
+razlicitim vrstama veza.
+
+
+2.Koji su tipovi baza podataka?
+Relacione, mrezne i hijerarhijske
+
+
+3.O tipovima:
+Relacione baze podataka - skup tabela povezanjih odredjenim relacijama
+Mrezne baze podataka - opsiane su matematickom teorijom grafova(cvorova i linkova).
+Gde  cvorovi predstavljaju tipove zapisa, a linkovi veze izmedju tipova zapisa.
+
+
+4.Osnovni elemetni relacione baze?
+jednodimenzionalna tabela povezane kljucevima
+
+
+5.Kljucevi podela?
+Primarni - sadrzi vrednost jedinstvenu za bazu podataka
+Spoljni - predstavlja vezu prema nekom drugom primarnom kljucu neke tabele, sa kojom osrtvaruje vezu
+
+
+6.Tri nezavisne celine baze podataka?
+Fizicki zapis baze podataka - nacin kako se podaci cuvaju u memoriji racuanra.
+Sistem za upravljanje bazama podataka SUBP(eng. DBMS)
+Aplikativni porgram- najudaljeniji nivo
+
+
+7.Integrisane funkcije u bazu podataka?
+poseban jezik za opsi naza podataka -DDL
+jezik za manipulaciju baza podataka - DML, od 90ih SQL
+privilegije za pristup, pregled i izmenu baze
+Visoki stepen integriteta podataka u bazi: 
+a) ponavlianie podataka se svodi na minimim
+b) Omogucavaju visekorisnicki istovremenski rad
+c) integrisana su resenja kojima su veze izmedju tabela zasticene od nepravilnoq koriscenia iste
+
+
+8.Sta je enitet?
+Eniteti su delovi sistema koji imaju svoje delove/instance
+
+9.Podela eniteta?
+Jaki-nezavisni objekat koji lako identifikujemo
+Slabi-zavisan od jakih entieta, najcesce izveden iz neke veze/relacije
+
