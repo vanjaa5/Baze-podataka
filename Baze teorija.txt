@@ -1,0 +1,112 @@
+1.Sta su baze podataka?
+Baze podataka predstavljaju sistem logicki zaokruzenih podataka kojima se opisuju neke osobe, predmeti, pojave ili procesi koji su medjusobno povezani
+razlicitim vrstama veza.
+
+
+2.Koji su tipovi baza podataka?
+Relacione, mrezne i hijerarhijske
+
+
+3.O tipovima:
+Relacione baze podataka - skup tabela povezanjih odredjenim relacijama
+Mrezne baze podataka - opsiane su matematickom teorijom grafova(cvorova i linkova).
+Gde  cvorovi predstavljaju tipove zapisa, a linkovi veze izmedju tipova zapisa.
+Hijerarhijski - specijalan slucaj mreznog modela, dodat je i podredjen nadredjen-tip veze.
+
+
+4.Osnovni elemetni relacione baze?
+jednodimenzionalna tabela povezane kljucevima
+
+
+5.Kljucevi podela?
+Primarni - sadrzi vrednost jedinstvenu za bazu podataka
+Spoljni - predstavlja vezu prema nekom drugom primarnom kljucu neke tabele, sa kojom osrtvaruje vezu
+
+
+6.Tri nezavisne celine baze podataka?
+Fizicki zapis baze podataka - nacin kako se podaci cuvaju u memoriji racuanra.
+Sistem za upravljanje bazama podataka SUBP(eng. DBMS)
+Aplikativni porgram- najudaljeniji nivo
+
+
+7.Integrisane funkcije u bazu podataka?
+poseban jezik za opsi naza podataka -DDL
+jezik za manipulaciju baza podataka - DML, od 90ih SQL
+privilegije za pristup, pregled i izmenu baze
+Visoki stepen integriteta podataka u bazi: 
+a) ponavlianie podataka se svodi na minimim
+b) Omogucavaju visekorisnicki istovremenski rad
+c) integrisana su resenja kojima su veze izmedju tabela zasticene od nepravilnoq koriscenia iste
+
+
+8.Sta je enitet?
+Eniteti su delovi sistema koji imaju svoje delove/instance
+
+9.Podela eniteta?
+Jaki-nezavisni objekat koji lako identifikujemo
+Slabi-zavisan od jakih entieta, najcesce izveden iz neke veze/relacije
+
+
+10.Agregirani entitet?
+Agregirani entitet je objekat u interesu posmatranja nastao u relaciji dva ili vise entiteta. Koristi se za dodtano opisivanje veze dva entiteta, ili da ukazemo da postoj ivezu izmedju entiteta.
+
+
+11.Prva normalna forma.
+Relacija se nalazi u prvoj normalnoj formi ako se ne sadrzi grupe podataka koji se ne ponavljaju(svaki atribut za jednu instancu entiteta iam tacno jednu vrednost)
+
+
+12.Funkcionalna zavisnost
+Atribut A je funkcialno zavistan od atributa B ako i samo ako svakoj vrednosti atributa B odgorvara jedna i samo jedna vrednost atributa A,
+a atribut A je u potpunosti gunkcionalno zavistan od atributa B, ako je funcionalno zavistan od atributa B,
+a nije funkcionalno zavistan ni od jesnog podskupa atributa B.
+
+13.Druga normalna forma
+Relacija treba da se nalazi u prvoj normalnoj formi.
+Ako svi njeni atributi koji nisu kandidat za priamrni kljuc zavise od priarnog kljuca.
+Svaki atribut koji nije deo primarnog jedinstvenog identifikatora mora biti u direktnoj funkcionalnoj zavisnosti od kompletnog priamrnog kljuca, tj. od svih njegovih delova.
+Treba da identifkujemo potpunu zavisnost od priamrnog kljuca i izdvojimo ih u normalmnu tabelu.
+
+
+14.Treca normalna forma
+Relacija se nalazi u trecoj normalnoj formi ako se vec nalazi u drugoj i ako nijedan od atributa koji nisu kandidati za priamrni kljuc nije prenosno zavistan od priamrnog kljuca.
+Medju atributima koji nisu deo priamrnog jedinstvenog identifikatora ne sme da postoji direktna funkcionalna zavisnost, pa nam je zadatak da odstranimo	sve prenosne zavisnosti.
+
+
+15.Vrste kordinalnost/terminalnosti/veze
+Jedan prema jedan / 1:1
+Jedan prema vise / 1:vise(najcesca u relacionim bazama podataka, svakak instanca iz A mora biti u vezi sa B, dok svaka instanca iz B moze biti povezana sa vise instanci iz A)
+Vise prema vise / vise:vise(nemoguce realizovati u relacionoj bazi podataka, pa se na modelu uklanja i postavlja novi entitet)
+
+16.Spoljni kluc
+Predstavlja nacin povezivanja tabela u okviru veze 1:vise.
+Obavezan atribut veze kod koga se zavrsavaju trozubci i priamni kljuc druge tabele.
+Pisemo ga na kraju kolone.
+
+
+17.
+Naziv entiteta jednina
+Naziv tabela mnozina
+
+
+18.Lukovi
+Oznacavaju medjusobno iskljucive veze
+
+19.Normalna forma
+Stepen u kome su podaci grupisani
+
+
+20. Pravljenje tabela u SQL.
+CREATE TABLE naziv(...);
+
+tipovi INT,VARCHAR(),BOOLEAN...
+obavezan atribut NOT NULL,
+neponavljajuca vrednost atributa UNIQUE,
+priamrni kljuc PRIMARY KEY,
+promean tabela ALTER TABLE naziv,
+nazivSpoljnogKljuca INT REFERENCES nazivTabele(nazivAtributa),
+grupni priamrni kljuc PRIAMRY KEY(nazivPrvogAtributa, nazivDrugogAtributa...)
+
+
+
+
+
