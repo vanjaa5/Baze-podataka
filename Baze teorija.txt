@@ -11,6 +11,8 @@ Relacione, mrezne i hijerarhijske
 Relacione baze podataka - skup tabela povezanjih odredjenim relacijama
 Mrezne baze podataka - opsiane su matematickom teorijom grafova(cvorova i linkova).
 Gde  cvorovi predstavljaju tipove zapisa, a linkovi veze izmedju tipova zapisa.
+Hijerarhijski - specijalan slucaj mreznog modela, dodat je i podredjen nadredjen-tip veze.
+
 
 
 4.Osnovni elemetni relacione baze?
